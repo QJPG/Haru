@@ -185,7 +185,7 @@ func _PollSentPackets() -> void:
 		if upacket is UserPacketCommit:
 			if upacket.IsConfirmed:
 				sentMessages.erase(upacket.Message.MessageID)
-				print("Confirmed....: %s" % upacket.Message.MessageID)
+				#print("Confirmed....: %s" % upacket.Message.MessageID)
 				continue
 			
 			if upacket.InTimeout:
