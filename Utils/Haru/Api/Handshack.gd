@@ -48,8 +48,8 @@ func _init() -> void:
 
 func SendData(packet : PackedByteArray) -> void:
 	if streamPeer:
-		if randi_range(0, 1) == 1:
-			streamPeer.put_packet(packet)
+		#if randi_range(0, 1) == 1:
+		streamPeer.put_packet(packet)
 
 func SendACK(message : HaruMessageWriter) -> void:
 	var ACK = HaruMessageWriter.new()
